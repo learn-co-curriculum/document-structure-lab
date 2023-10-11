@@ -1,6 +1,13 @@
 # Document Structure Continued
 
-## Problem Statement
+## Objectives
+
+- Reinforce our understanding of the basic HTML document structure
+- Introduce HTML comments
+- Expand our understanding of the `head` section and its contents
+- Reinforce our understanding of document structure through creation
+
+## Introduction
 
 Every HTML document has a specific set of required tags. Because these are
 required _every_ time we create a web page, it is valuable to gain a more
@@ -11,25 +18,18 @@ In this lesson, we will be both reviewing what we have learned about a well
 formed HTML document and expanding a bit on the `doctype`, `html` and `head`
 tags, as well as introducing how to add comments within our HTML code.
 
-## Objectives
-
-1. Reinforce our understanding of the basic HTML document structure
-2. Introduce HTML comments
-3. Expand our understanding of the `head` section and its contents
-4. Reinforce our understanding of document structure through creation
-
 ## Reinforce Our Understanding Of The Basic HTML Document Structure
 
 Let's quickly review the bare essentials of an HTML document. In the provided
 `index.html` file, add the following tags:
 
-* A `doctype` tag
-* Opening and closing `html` tags
-* Opening and closing `head` tags nested inside the `html` tags
-* Opening and closing `body` tags nested inside the `html` tags
+- A `doctype` tag
+- Opening and closing `html` tags
+- Opening and closing `head` tags nested inside the `html` tags
+- Opening and closing `body` tags nested inside the `html` tags
 
 If written correctly, running `learn` now will pass the **first** test of this
-lab.  **However** you will not be done yet! We have to make **all** the tests
+lab. **However** you will not be done yet! We have to make **all** the tests
 pass in order to make the test code happy! Fixing this first one means that we
 get to attack the next one. Let's get to it!
 
@@ -46,17 +46,16 @@ what it found. These days, every current browser is compatible with HTML5, and
 `doctype` is mainly used to tell the browser to render the page in standards
 compliant mode.
 
-The `DOCTYPE` element, as with all HTML, starts with a `<`
-and ends with a `>`. Uniquely, the `doctype` tag starts with an exclamation
-point, `!`, followed by `DOCTYPE`, then specifies which version of HTML we want
-to use. In HTML5, we just write `html` and the browser interprets the rest of the
-document as HTML5.
+The `DOCTYPE` element, as with all HTML, starts with a `<` and ends with a `>`.
+Uniquely, the `doctype` tag starts with an exclamation point, `!`, followed by
+`DOCTYPE`, then specifies which version of HTML we want to use. In HTML5, we
+just write `html` and the browser interprets the rest of the document as HTML5.
 
 ### `<html>`
 
-The next element is also always required: `<html>`. This tells the browser
-that everything that falls between the opening and closing `html` tags is to
-be interpreted as HTML code.
+The next element is also always required: `<html>`. This tells the browser that
+everything that falls between the opening and closing `html` tags is to be
+interpreted as HTML code.
 
 One attribute that is important to include in the `<html>` tag is `lang`, which
 declares what language the webpage is written in. In our case, writing in
@@ -65,8 +64,7 @@ language a page is written in. Google, for instance, can use the `lang`
 attribute to know when to prompt uses about translating web content.
 
 ```html
-<html lang="en">
-</html>
+<html lang="en"></html>
 ```
 
 ## Introduce HTML Comments
@@ -93,8 +91,9 @@ The `head` section is not visible to a website visitor, but it contains a lot of
 useful info about our webpage.
 
 In the `head` section, we place a number of specific tags, most notably:
-  - `<link>`
-  - `<title>`
+
+- `<link>`
+- `<title>`
 
 Let's look at each of them in turn:
 
@@ -110,21 +109,24 @@ The `<link>` tag is for importing files.
 Most commonly, we'll use `<link>` to import CSS files. Like so:
 
 ```html
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
 ```
 
 Linking stylesheets this way allows multi-page websites to share a source of
 styling content for every page, making for a consistent, easy to maintain file
-structure.  Often, on fully developed websites, multiple stylesheets are linked
-in the `head`.  For example, when doing the final polishing of a web site you
+structure. Often, on fully developed websites, multiple stylesheets are linked
+in the `head`. For example, when doing the final polishing of a web site you
 might see a series of `<link>` definitions like:
 
 ```html
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="company.css">
-<link rel="stylesheet" type="text/css" href="engineering-department.css">
-<link rel="stylesheet" type="text/css" href="project-x-launch.css">
-<link rel="stylesheet" type="text/css" href="typography.css">
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+/>
+<link rel="stylesheet" type="text/css" href="company.css" />
+<link rel="stylesheet" type="text/css" href="engineering-department.css" />
+<link rel="stylesheet" type="text/css" href="project-x-launch.css" />
+<link rel="stylesheet" type="text/css" href="typography.css" />
 ```
 
 In this example we're getting some CSS information from the
@@ -133,8 +135,8 @@ style standard, an engineering style standard, a style motif for the launch of
 "Project X" and then we're adding some specific rules about font display. You
 can bring in a **lot** of information with the `<link>` tag!
 
-This specific example aside, you'll be learning a lot more about linking
-files to create stylistic effect in later lessons.
+This specific example aside, you'll be learning a lot more about linking files
+to create stylistic effect in later lessons.
 
 ### `title`
 
@@ -154,13 +156,13 @@ to keep the title brief, or it will not be fully visible.
 ## Reinforce Our Understanding Of Document Structure Through Creation
 
 Okay, time to put what we've learned to the test. To complete this lab, you must
-apply all the tags we've discussed in this lesson.  Run `learn` to see what is
+apply all the tags we've discussed in this lesson. Run `learn` to see what is
 required to pass each test. Each test will urge you on.
 
 ## Conclusion
 
 In this lesson, we've reviewed the basics of document structure, as well as what
-is typically contained within the `head`.  Using the `head` section, we are able
+is typically contained within the `head`. Using the `head` section, we are able
 to add relevant data about our webpage as a whole. As a bonus surprise, by
 learning how to make our web pages _search engine friendly_, we've also dabbled
 a bit into the basics of Search Engine Optimization! We are now ready to take a
